@@ -1,0 +1,56 @@
+/* Tour Page Hero Section - Consistent with Packages */
+
+.toursPageWrapper {
+  padding: 0;
+  background: #f9fafb;
+  min-height: 100vh;
+}
+
+.heroSection {
+  background: linear-gradient(135deg, #4f9fff, #8a2be2);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  margin-bottom: 40px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+  letter-spacing: -1px;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.heroSubtitle {
+  font-size: 1.4rem;
+  font-weight: 300;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.mainContent {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px 50px;
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.1rem;
+  }
+
+  .heroSection {
+    padding: 60px 20px;
+  }
+}
+

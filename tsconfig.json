@@ -1,11 +1,21 @@
 {
   "compilerOptions": {
     "target": "ES2017",
+    //     "baseUrl": ".", 
+
+    //  "paths": {
+    //   "@/*": ["src/*"]
+    // },
+       "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"]
+    },
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
+    "noImplicitAny": false,
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,

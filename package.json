@@ -9,18 +9,23 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.9.0",
+    "@supabase/supabase-js": "^2.75.1",
     "antd": "^5.27.4",
     "axios": "^1.12.2",
+    "lightningcss": "^1.30.2",
+    "lightningcss-linux-x64-gnu": "^1.30.2",
     "next": "15.5.4",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "react-redux": "^9.2.0"
+    "react-redux": "^9.2.0",
+    "sass": "^1.94.2",
+    "styled-components": "^6.1.19"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
-    "@types/node": "24.6.2",
-    "@types/react": "19.2.0",
+    "@types/node": "^24.6.2",
+    "@types/react": "^19.2.0",
     "tailwindcss": "^4",
-    "typescript": "5.9.3"
+    "typescript": "^5.9.3"
   }
 }

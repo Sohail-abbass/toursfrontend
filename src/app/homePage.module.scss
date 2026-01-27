@@ -1,0 +1,774 @@
+/* ================================
+   HOME PAGE STYLES
+   ================================ */
+
+.pageWrapper {
+  width: 100%;
+  background: #f9fafb;
+  min-height: 100vh;
+}
+
+.centerScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.centerSmall {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+/* ================================
+   HERO SECTION
+   ================================ */
+
+.heroSection {
+  width: 100%;
+  position: relative;
+}
+
+.heroCarousel {
+  width: 100%;
+}
+
+.heroSlide {
+  position: relative;
+  width: 100%;
+  height: 650px;
+  
+  @media (max-width: 768px) {
+    height: 500px;
+  }
+  
+  @media (max-width: 480px) {
+    height: 400px;
+  }
+}
+
+.heroImageWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+}
+
+.heroContent {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  z-index: 2;
+}
+
+.heroTextWrapper {
+  text-align: center;
+  max-width: 900px;
+  animation: fadeInUp 1s ease-out;
+}
+
+.heroTitle {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+  line-height: 1.2;
+  
+  @media (max-width: 968px) {
+    font-size: 2.75rem;
+  }
+  
+  @media (max-width: 768px) {
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 1.75rem;
+  }
+}
+
+.heroDescription {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 1.25rem;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  @media (max-width: 768px) {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    display: none; // Hide on mobile for cleaner look
+  }
+}
+
+.heroButtons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.heroBtn, .heroBtnSecondary {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  
+  @media (max-width: 480px) {
+    padding: 0.875rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+.heroBtn {
+  background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
+  color: white;
+  
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(255, 107, 53, 0.4);
+    color: white;
+  }
+}
+
+.heroBtnSecondary {
+  background: rgba(255, 255, 255, 0.95);
+  color: #ff6b35;
+  
+  &:hover {
+    transform: translateY(-3px);
+    background: white;
+    box-shadow: 0 12px 28px rgba(255, 255, 255, 0.4);
+    color: #ff6b35;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================================
+   SECTION HEADERS
+   ================================ */
+
+.toursSection, .weekendSection {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+  
+  @media (max-width: 768px) {
+    padding: 3rem 1.5rem;
+  }
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sectionTitle {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: #1a202c;
+  margin-bottom: 1rem;
+  
+  @media (max-width: 768px) {
+    font-size: 2.25rem;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 1.875rem;
+  }
+}
+
+.sectionSubtitle {
+  font-size: 1.25rem;
+  color: #6b7280;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  @media (max-width: 768px) {
+    font-size: 1.1rem;
+  }
+}
+
+.viewAllWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.viewAllBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ff6b35;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 0.875rem 2.5rem;
+  border: 2px solid #ff6b35;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  
+  svg {
+    transition: transform 0.3s ease;
+  }
+  
+  &:hover {
+    background: #ff6b35;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 107, 53, 0.3);
+    
+    svg {
+      transform: translateX(4px);
+    }
+  }
+}
+
+/* ================================
+   NEW TOUR CARDS (Instagram-style)
+   ================================ */
+
+.toursGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.tourCardNew {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  text-decoration: none;
+  display: block;
+  
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+  }
+}
+
+.tourImageContainer {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+}
+
+.tourImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+  
+  .tourCardNew:hover & {
+    transform: scale(1.1);
+  }
+}
+
+.tourBadge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
+  padding: 0.75rem 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.4);
+  z-index: 2;
+  
+  .badgeText {
+    display: block;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+  
+  .badgeDates {
+    display: block;
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-top: 2px;
+  }
+}
+
+.heartBtn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 45px;
+  height: 45px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 2;
+  
+  &:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.1);
+  }
+}
+
+.tourCardContent {
+  padding: 1.75rem;
+}
+
+.tourHeader {
+  margin-bottom: 1.25rem;
+  
+  .tourTitleNew {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #1a202c;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+  }
+  
+  .tourDate {
+    color: #ff6b35;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0;
+  }
+}
+
+.priceRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem 0;
+  border-top: 2px solid #f0f0f0;
+  border-bottom: 2px solid #f0f0f0;
+  margin-bottom: 1.25rem;
+}
+
+.priceItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  
+  .priceLabel {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.4rem;
+  }
+  
+  .priceValue {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #1a202c;
+  }
+}
+
+.tourFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.locationInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #4a5568;
+  font-size: 0.9rem;
+  font-weight: 500;
+  
+  svg {
+    color: #ff6b35;
+  }
+}
+
+.tourId {
+  font-size: 0.85rem;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.contactInfo {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  padding: 0.75rem;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #4f9fff;
+  letter-spacing: 0.3px;
+}
+
+/* ================================
+   LEGACY TOUR STYLES (Keep for compatibility)
+   ================================ */
+
+.tourGrid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tourCard {
+  border-radius: 20px !important;
+  overflow: hidden;
+  border: none !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15) !important;
+  }
+}
+
+.tourImage {
+  height: 260px;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  
+  .tourCard:hover & {
+    transform: scale(1.05);
+  }
+}
+
+.tourContent {
+  padding: 1.5rem;
+}
+
+.tourTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 0.5rem;
+}
+
+.tourLocation {
+  color: #6b7280;
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.tourInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.iconRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #374151;
+  font-size: 0.95rem;
+  
+  svg {
+    color: #ff6b35;
+    font-size: 1.1rem;
+  }
+}
+
+.bookBtn {
+  width: 100%;
+  height: 45px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 12px !important;
+  background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%) !important;
+  border: none !important;
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3) !important;
+  
+  &:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4) !important;
+  }
+}
+
+/* ================================
+   EMPTY STATE
+   ================================ */
+
+.emptyState {
+  text-align: center;
+  padding: 4rem 2rem;
+  
+  p {
+    font-size: 1.25rem;
+    color: #6b7280;
+    margin-bottom: 2rem;
+  }
+}
+
+.emptyStateBtn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
+  color: white;
+  font-weight: 700;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 107, 53, 0.4);
+    color: white;
+  }
+}
+
+/* ================================
+   WEEKEND SECTION
+   ================================ */
+
+.weekendSection {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  padding: 5rem 2rem;
+}
+
+.searchWrapper {
+  max-width: 600px;
+  margin: 0 auto 3rem;
+}
+
+.searchInput {
+  border-radius: 50px !important;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  
+  input {
+    border-radius: 50px 0 0 50px !important;
+    border: none !important;
+    padding: 0.75rem 1.5rem !important;
+    font-size: 1rem;
+  }
+  
+  button {
+    border-radius: 0 50px 50px 0 !important;
+    background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%) !important;
+    border: none !important;
+    padding: 0 2rem !important;
+  }
+}
+
+.imageGrid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.imageCard {
+  border-radius: 20px !important;
+  overflow: hidden;
+  border: none !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15) !important;
+  }
+}
+
+.imageWrapper {
+  height: 240px;
+  overflow: hidden;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .imageCard:hover & img {
+    transform: scale(1.1);
+  }
+}
+
+.imageCardContent {
+  padding: 1.25rem;
+}
+
+.imageTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+}
+
+.imageAuthor {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* ================================
+   CTA SECTION
+   ================================ */
+
+.ctaSection {
+  background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+  padding: 6rem 2rem;
+  text-align: center;
+  
+  @media (max-width: 768px) {
+    padding: 4rem 1.5rem;
+  }
+}
+
+.ctaContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ctaTitle {
+  font-size: 3rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 1.5rem;
+  
+  @media (max-width: 768px) {
+    font-size: 2.25rem;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 1.875rem;
+  }
+}
+
+.ctaDescription {
+  font-size: 1.35rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 3rem;
+  
+  @media (max-width: 768px) {
+    font-size: 1.15rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ctaPrimaryBtn, .ctaSecondaryBtn {
+  padding: 1.125rem 3rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  
+  @media (max-width: 480px) {
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+  }
+}
+
+.ctaPrimaryBtn {
+  background: linear-gradient(135deg, #ff6b35 0%, #ff8c42 100%);
+  color: white;
+  box-shadow: 0 8px 20px rgba(255, 107, 53, 0.3);
+  
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(255, 107, 53, 0.5);
+    color: white;
+  }
+}
+
+.ctaSecondaryBtn {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  
+  &:hover {
+    background: white;
+    color: #1a202c;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(255, 255, 255, 0.2);
+  }
+}
