@@ -1,25 +1,22 @@
-// src/api/packageApi.ts
+// src/app/api/package/route.tsx
+// Frontend helper functions for talking to the Express packages backend
+
 import axios from "axios";
 
-const BASE_URL = "http://localhost:5000";
+// Point this to your Express backend (Mongo-connected)
+// You can override via NEXT_PUBLIC_BACKEND_URL in .env.local
+const BASE_URL =
+  process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:5000/api";
 
+// 🔹 Get all packages (uses GET /api/packages)
 export const getPackages = async () => {
   const res = await axios.get(`${BASE_URL}/packages`);
+  console.log("getPackages response:", res.data);
   return res.data;
 };
 
-// Fetch package by slug
+// 🔹 Fetch package by slug directly from backend (GET /api/packages/:slug)
 export const getPackageBySlug = async (slug: string) => {
-  // 1. Fetch all packages
-  const res = await axios.get(`${BASE_URL}/packages`);
-  const packages = res.data;
-
-  // 2. Find the package matching the slug
-  const pkg = packages.find((p: any) => p.slug === slug);
-
-  if (!pkg) {
-    throw new Error(`Package with slug "${slug}" not found`);
-  }
-
-  return pkg;
+  const res = await axios.get(`${BASE_URL}/packages/${slug}`);
+  return res.data;
 };

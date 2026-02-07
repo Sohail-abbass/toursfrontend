@@ -78,7 +78,7 @@ export default function Package() {
 
     setFilteredPackages(result);
   }, [packages, searchTerm, sortBy, priceFilter]);
-
+console.log("packages data in package component",packages);
   if (loading) {
     return (
       <div className={styles.pkgCenter}>

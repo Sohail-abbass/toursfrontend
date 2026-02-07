@@ -32,6 +32,7 @@ export default function HomePage() {
   const fetchTours = async () => {
     try {
       const res = await axios.get('http://localhost:5000/tours');
+      console.log("tours data in component",res.data);
       setTours(res.data);
     } catch (error) {
       console.error('Error fetching tours:', error);
@@ -101,8 +102,8 @@ export default function HomePage() {
           <div className={styles.toursGrid}>
             {tours.slice(0, 4).map((tour) => (
               <Link 
-                key={tour.id} 
-                href={`/details/tour/${tour.slug}`}
+              key={tour._id || tour.slug}  // ✅ use _id or slug
+              href={`/details/tour/${tour.slug}`}
                 className={styles.tourCardNew}
               >
                 <div className={styles.tourImageContainer}>

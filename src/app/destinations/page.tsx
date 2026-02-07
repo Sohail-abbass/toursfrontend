@@ -6,7 +6,7 @@ import Link from 'next/link';
 import styles from './destinations.module.css';
 
 interface Destination {
-  id: number;
+  _id: number;
   slug: string;
   name: string;
   region: string;
@@ -73,7 +73,7 @@ export default function DestinationsPage() {
           <div className={styles.grid}>
             {destinations.map((destination) => (
               <Link
-                key={destination.id}
+                key={destination._id || destination.slug}
                 href={`/destinations/${destination.slug}`}
                 className={styles.card}
               >

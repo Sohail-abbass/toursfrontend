@@ -13,13 +13,15 @@ export const fetchPackages = createAsyncThunk<Package[]>(
   "packages/fetchPackages",
   async (_, { rejectWithValue }) => {
     try {
-      return await getPackages();
+      const data = await getPackages();
+      console.log("✅ fetchPackages data from API:", data); // <-- check here
+      return data;
     } catch (err: any) {
+      console.error("❌ fetchPackages error:", err);
       return rejectWithValue(err.response?.data || "Failed to fetch packages");
     }
   }
 );
-
 // export const fetchPackageById = createAsyncThunk<Package, number>(
 //   "packages/fetchPackageById",
 //   async (id, { rejectWithValue }) => {
@@ -56,6 +58,8 @@ const packageSlice = createSlice({
       .addCase(fetchPackages.fulfilled, (state, action: PayloadAction<Package[]>) => {
         state.loading = false;
         state.packages = action.payload;
+        console.log("✅ packages stored in Redux:", action.payload.length, action.payload);
+
       })
       .addCase(fetchPackages.rejected, (state, action) => {
         state.loading = false;

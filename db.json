@@ -1,724 +1,724 @@
-{
-"tours": [
-  {
-    "id": 1,
-    "title": "03 Days Tour - Neelum Valley",
-    "slug": "neelum-valley-3-days",
-    "location": "Neelum Valley, Kashmir",
-    "days": 3,
-    "nights": 2,
-    "price": 14000,
-    "image": "/home3.jpg",
-    "gallery": ["/home3.jpg", "/package/skardu.jpg", "/mountain2.jpg"],
-    "shortDescription": "Explore the stunning beauty of Neelum Valley",
-    "fullDescription": "Experience the breathtaking beauty of Neelum Valley with this 3-day tour. Visit pristine locations, enjoy crystal-clear streams, and immerse yourself in the natural paradise of Kashmir.",
-    "highlights": [
-      "Visit Keran and Sharda",
-      "Explore Arang Kel",
-      "Neelum River views",
-      "Local cuisine experience"
-    ],
-    "inclusions": [
-      "Transportation",
-      "2 Nights Hotel Stay",
-      "Breakfast",
-      "Guided Tours"
-    ],
-    "exclusions": [
-      "Lunch & Dinner",
-      "Personal Expenses",
-      "Travel Insurance"
-    ],
-    "itinerary": [
-      {
-        "day": 1,
-        "title": "Arrival & Keran Visit",
-        "description": "Arrive in Muzaffarabad, drive to Keran, enjoy scenic views of the Neelum River"
-      },
-      {
-        "day": 2,
-        "title": "Sharda & Arang Kel",
-        "description": "Visit Sharda University ruins, hike to Arang Kel meadows"
-      },
-      {
-        "day": 3,
-        "title": "Return Journey",
-        "description": "Morning at leisure, return to Muzaffarabad"
-      }
-    ],
-    "solo": 14000,
-    "couple": 31500,
-    "deluxe": 45000,
-    "featured": true
-  },
-  {
-    "id": 2,
-    "title": "05 Days Tour - Hunza Valley",
-    "slug": "hunza-valley-5-days",
-    "location": "Hunza Valley, Gilgit-Baltistan",
-    "days": 5,
-    "nights": 4,
-    "price": 21000,
-    "image": "/home1.jpg",
-    "gallery": ["/home1.jpg", "/package/honza.jpg", "/home6.jpg"],
-    "shortDescription": "Discover the enchanting Hunza Valley",
-    "fullDescription": "Embark on a 5-day journey through Hunza Valley, home to ancient forts, stunning glaciers, and warm hospitality. Experience the legendary beauty that has captivated travelers for centuries.",
-    "highlights": [
-      "Baltit & Altit Forts",
-      "Attabad Lake boat ride",
-      "Passu Cones view",
-      "Eagle's Nest sunset",
-      "Local Hunza cuisine"
-    ],
-    "inclusions": [
-      "Private Transportation",
-      "4 Nights Hotel Stay",
-      "Daily Breakfast",
-      "Sightseeing Tours",
-      "Professional Guide"
-    ],
-    "exclusions": [
-      "Lunch & Dinner",
-      "Entrance Fees",
-      "Personal Shopping"
-    ],
-    "itinerary": [
-      {
-        "day": 1,
-        "title": "Islamabad to Hunza",
-        "description": "Depart early morning via Karakoram Highway, stop at viewpoints"
-      },
-      {
-        "day": 2,
-        "title": "Karimabad Exploration",
-        "description": "Visit Baltit Fort, Altit Fort, explore local bazaar"
-      },
-      {
-        "day": 3,
-        "title": "Attabad Lake & Passu",
-        "description": "Boat ride at Attabad Lake, visit Passu Cones and suspension bridge"
-      },
-      {
-        "day": 4,
-        "title": "Eagle's Nest & Duikar",
-        "description": "Watch sunset from Eagle's Nest, visit Duikar village"
-      },
-      {
-        "day": 5,
-        "title": "Return Journey",
-        "description": "Morning shopping, return to Islamabad"
-      }
-    ],
-    "solo": 21000,
-    "couple": 52000,
-    "deluxe": 90000,
-    "featured": true
-  },
-  {
-    "id": 3,
-    "title": "04 Days Tour - Skardu Valley",
-    "slug": "skardu-valley-4-days",
-    "location": "Skardu, Gilgit-Baltistan",
-    "days": 4,
-    "nights": 3,
-    "price": 18000,
-    "image": "/home2.jpg",
-    "gallery": ["/home2.jpg", "/package/gilgitt.jpg", "/package/skardu.jpg"],
-    "shortDescription": "Gateway to K2 and stunning lakes",
-    "fullDescription": "Explore Skardu, the gateway to some of world's highest peaks. Visit crystal-clear lakes, ancient forts, and experience the serenity of this mountain paradise.",
-    "highlights": [
-      "Shangrila Resort",
-      "Satpara Lake",
-      "Shigar Fort",
-      "Katpana Desert",
-      "Local culture"
-    ],
-    "inclusions": [
-      "Transportation",
-      "3 Nights Accommodation",
-      "Breakfast",
-      "Sightseeing",
-      "Guide Services"
-    ],
-    "exclusions": [
-      "Meals (Lunch/Dinner)",
-      "Personal Expenses",
-      "Optional Activities"
-    ],
-    "itinerary": [
-      {
-        "day": 1,
-        "title": "Arrival in Skardu",
-        "description": "Flight to Skardu, check-in, visit Kharpocho Fort"
-      },
-      {
-        "day": 2,
-        "title": "Shangrila & Satpara",
-        "description": "Visit Shangrila Resort, Satpara Lake, Upper Kachura"
-      },
-      {
-        "day": 3,
-        "title": "Shigar Valley",
-        "description": "Explore Shigar Fort, Cold Desert, local villages"
-      },
-      {
-        "day": 4,
-        "title": "Departure",
-        "description": "Morning at leisure, flight back"
-      }
-    ],
-    "solo": 18000,
-    "couple": 42000,
-    "deluxe": 75000,
-    "featured": true
-  },
-  {
-    "id": 4,
-    "title": "06 Days Tour - Swat & Kalam",
-    "slug": "swat-kalam-6-days",
-    "location": "Swat Valley, KPK",
-    "days": 6,
-    "nights": 5,
-    "price": 25000,
-    "image": "/home3.jpg",
-    "gallery": ["/home3.jpg", "/mountain1.jpg", "/mountain2.jpg"],
-    "shortDescription": "Switzerland of Pakistan adventure",
-    "fullDescription": "Discover Swat Valley, known as the Switzerland of Pakistan. This 6-day tour takes you through lush valleys, pristine lakes, and historic sites.",
-    "highlights": [
-      "Malam Jabba Ski Resort",
-      "Mahodand Lake",
-      "Kalam Valley",
-      "Buddhist Stupas",
-      "Mingora Bazaar"
-    ],
-    "inclusions": [
-      "Private Transport",
-      "5 Nights Hotels",
-      "All Breakfasts",
-      "Sightseeing Tours",
-      "Professional Guide"
-    ],
-    "exclusions": [
-      "Lunch & Dinner",
-      "Ski Equipment",
-      "Personal Shopping"
-    ],
-    "itinerary": [
-      {
-        "day": 1,
-        "title": "Islamabad to Swat",
-        "description": "Drive to Mingora, check-in, explore local bazaar"
-      },
-      {
-        "day": 2,
-        "title": "Malam Jabba",
-        "description": "Visit Malam Jabba Ski Resort, cable car ride"
-      },
-      {
-        "day": 3,
-        "title": "Kalam Valley",
-        "description": "Drive to Kalam, explore Ushu Forest, Mahodand Lake"
-      },
-      {
-        "day": 4,
-        "title": "Mahodand Lake Trek",
-        "description": "Full day at Mahodand Lake"
-      },
-      {
-        "day": 5,
-        "title": "Buddhist Sites",
-        "description": "Visit Buddhist stupas and monasteries"
-      },
-      {
-        "day": 6,
-        "title": "Return",
-        "description": "Drive back to Islamabad"
-      }
-    ],
-    "solo": 25000,
-    "couple": 58000,
-    "deluxe": 95000,
-    "featured": true
-  }
-],
- "packages": [
-    {
-      "id": 1,
-      "slug": "northern-adventure-7-days",
-      "title": "Northern Adventure – 7 Days",
-      "duration": {
-        "days": 7,
-        "nights": 6
-      },
-      "price": 30000,
-      "currency": "PKR",
-      "description": "Explore Hunza, Skardu and Gilgit in one unforgettable northern adventure with breathtaking mountain views.",
-      "mainImage": "/home1.jpg",
-      "gallery": [
-        "/package/gilgitt.jpg",
-        "/package/honza.jpg",
-        "/package/skardu.jpg"
-      ],
-      "destinations": [
-        {
-          "name": "Hunza",
-          "stayDays": 3,
-          "image": "/package/gilgitt.jpg" 
-        },
-        {
-          "name": "Skardu",
-          "stayDays": 2,
-          "image": "/package/honza.jpg"
-        },
-        {
-          "name": "Gilgit",
-          "stayDays": 2,
-          "image": "/package/skardu.jpg" 
-        }
-      ],
-      "itinerary": [
-        {
-          "day": 1,
-          "title": "Islamabad → Gilgit",
-          "activities": [
-            "Early morning departure from Islamabad",
-            "Flight to Gilgit",
-            "Hotel check-in & rest",
-            "Evening walk in Gilgit Bazaar"
-          ],
-          "meals": ["Lunch", "Dinner"],
-          "stay": "Gilgit"
-        },
-        {
-          "day": 2,
-          "title": "Gilgit → Hunza",
-          "activities": [
-            "Drive towards Hunza Valley",
-            "Rakaposhi viewpoint",
-            "Visit Altit Fort"
-          ],
-          "meals": ["Breakfast", "Dinner"],
-          "stay": "Hunza"
-        }
-      ],
-      "accommodation": {
-        "hotelCategory": "3-4 Star Hotels",
-        "roomType": "Sharing basis",
-        "totalNights": 6,
-        "cities": ["Gilgit", "Hunza", "Skardu"]
-      },
-      "transport": {
-        "mode": "Coaster/Prado",
-        "fuelIncluded": true,
-        "driver": true,
-        "airportTransfers": true
-      },
-      "includes": [
-        "Hotel accommodation",
-        "Daily breakfast",
-        "Private transport",
-        "Fuel & toll taxes",
-        "Driver allowance",
-        "Sightseeing tours"
-      ],
-      "excludes": [
-        "Personal expenses",
-        "Travel insurance",
-        "Extra meals",
-        "Any activity not mentioned"
-      ],
-      "idealFor": ["Families", "Couples", "Friends"],
-      "status": "active"
-    },
-    {
-      "id": 2,
-      "slug": "kpk-explorer-5-days",
-      "title": "KPK Explorer – 5 Days",
-      "duration": {
-        "days": 5,
-        "nights": 4
-      },
-      "price": 22000,
-      "currency": "PKR",
-      "description": "Discover Swat Valley, Malam Jabba ski resort and historic Mingora in this scenic KPK adventure.",
-      "mainImage": "/home3.jpg",
-      "gallery": [
-        "/package/gilgitt.jpg",
-        "/package/honza.jpg",
-        "/package/skardu.jpg"
-      ],
-      "destinations": [
-        {
-          "name": "Swat Valley",
-          "stayDays": 2,
-          "image": "/package/gilgitt.jpg"
-        },
-        {
-          "name": "Malam Jabba",
-          "stayDays": 2,
-          "image": "/package/honza.jpg"
-        },
-        {
-          "name": "Mingora",
-          "stayDays": 1,
-          "image": "/package/skardu.jpg"
-        }
-      ],
-      "accommodation": {
-        "hotelCategory": "3 Star Hotels",
-        "roomType": "Sharing basis",
-        "totalNights": 4
-      },
-      "transport": {
-        "mode": "Private Hiace",
-        "fuelIncluded": true,
-        "driver": true
-      },
-      "includes": [
-        "Hotel stay",
-        "Breakfast included",
-        "Sightseeing tours",
-        "Transport with fuel",
-        "Professional guide"
-      ],
-      "excludes": [
-        "Lunch & dinner",
-        "Personal expenses",
-        "Ski equipment rental"
-      ],
-      "idealFor": ["Adventure Seekers", "Families", "Nature Lovers"],
-      "status": "active"
-    },
-    {
-      "id": 3,
-      "slug": "skardu-deosai-tour-6-days",
-      "title": "Skardu & Deosai Plains – 6 Days",
-      "duration": {
-        "days": 6,
-        "nights": 5
-      },
-      "price": 35000,
-      "currency": "PKR",
-      "description": "Experience the majestic beauty of Skardu, Deosai National Park, and Shangrila Resort on this premium tour.",
-      "mainImage": "/home2.jpg",
-      "gallery": [
-        "/package/skardu.jpg",
-        "/package/gilgitt.jpg",
-        "/package/honza.jpg"
-      ],
-      "destinations": [
-        {
-          "name": "Skardu City",
-          "stayDays": 2,
-          "image": "/package/skardu.jpg"
-        },
-        {
-          "name": "Deosai Plains",
-          "stayDays": 2,
-          "image": "/package/gilgitt.jpg"
-        },
-        {
-          "name": "Shangrila",
-          "stayDays": 2,
-          "image": "/package/honza.jpg"
-        }
-      ],
-      "accommodation": {
-        "hotelCategory": "4 Star Hotels",
-        "roomType": "Double/Twin",
-        "totalNights": 5
-      },
-      "transport": {
-        "mode": "4x4 Jeeps",
-        "fuelIncluded": true,
-        "driver": true,
-        "airportTransfers": true
-      },
-      "includes": [
-        "Luxury accommodation",
-        "All meals (Breakfast, Lunch, Dinner)",
-        "4x4 Jeep transport",
-        "Professional guide",
-        "Entry fees to parks",
-        "Photography stops"
-      ],
-      "excludes": [
-        "Personal expenses",
-        "Travel insurance",
-        "Tips for staff"
-      ],
-      "idealFor": ["Photographers", "Nature Lovers", "Luxury Travelers"],
-      "status": "active"
-    },
-    {
-      "id": 4,
-      "slug": "kashmir-neelum-valley-4-days",
-      "title": "Kashmir & Neelum Valley – 4 Days",
-      "duration": {
-        "days": 4,
-        "nights": 3
-      },
-      "price": 18000,
-      "currency": "PKR",
-      "description": "Explore the paradise of Kashmir with visits to Muzaffarabad, Sharda, and the stunning Neelum Valley.",
-      "mainImage": "/home4.jpg",
-      "gallery": [
-        "/package/honza.jpg",
-        "/package/skardu.jpg",
-        "/package/gilgitt.jpg"
-      ],
-      "destinations": [
-        {
-          "name": "Muzaffarabad",
-          "stayDays": 1,
-          "image": "/package/honza.jpg"
-        },
-        {
-          "name": "Neelum Valley",
-          "stayDays": 2,
-          "image": "/package/skardu.jpg"
-        },
-        {
-          "name": "Sharda",
-          "stayDays": 1,
-          "image": "/package/gilgitt.jpg"
-        }
-      ],
-      "accommodation": {
-        "hotelCategory": "3 Star Hotels",
-        "roomType": "Sharing basis",
-        "totalNights": 3
-      },
-      "transport": {
-        "mode": "Private Hiace",
-        "fuelIncluded": true,
-        "driver": true
-      },
-      "includes": [
-        "Hotel accommodation",
-        "Breakfast",
-        "Transport with fuel",
-        "Sightseeing tours",
-        "Local guide"
-      ],
-      "excludes": [
-        "Lunch & dinner",
-        "Personal shopping",
-        "Adventure activities"
-      ],
-      "idealFor": ["Couples", "Families", "Solo Travelers"],
-      "status": "active"
-    },
-    {
-      "id": 5,
-      "slug": "naran-kaghan-shogran-5-days",
-      "title": "Naran, Kaghan & Shogran – 5 Days",
-      "duration": {
-        "days": 5,
-        "nights": 4
-      },
-      "price": 20000,
-      "currency": "PKR",
-      "description": "Journey through the lush green valleys of Naran, Kaghan, and Shogran with stops at Lake Saif ul Malook.",
-      "mainImage": "/home5.jpg",
-      "gallery": [
-        "/package/gilgitt.jpg",
-        "/package/honza.jpg",
-        "/package/skardu.jpg"
-      ],
-      "destinations": [
-        {
-          "name": "Naran",
-          "stayDays": 2,
-          "image": "/package/gilgitt.jpg"
-        },
-        {
-          "name": "Kaghan",
-          "stayDays": 1,
-          "image": "/package/honza.jpg"
-        },
-        {
-          "name": "Shogran",
-          "stayDays": 2,
-          "image": "/package/skardu.jpg"
-        }
-      ],
-      "accommodation": {
-        "hotelCategory": "3 Star Hotels",
-        "roomType": "Double/Twin",
-        "totalNights": 4
-      },
-      "transport": {
-        "mode": "Coaster/Hiace",
-        "fuelIncluded": true,
-        "driver": true
-      },
-      "includes": [
-        "Hotel stay",
-        "Daily breakfast",
-        "Private transport",
-        "Lake Saif ul Malook jeep",
-        "Sightseeing tours"
-      ],
-      "excludes": [
-        "Lunch & dinner",
-        "Horse riding charges",
-        "Personal expenses"
-      ],
-      "idealFor": ["Families", "Friends", "Honeymooners"],
-      "status": "active"
-    },
-    {
-      "id": 6,
-      "slug": "k2-base-camp-trek-12-days",
-      "title": "K2 Base Camp Trek – 12 Days",
-      "duration": {
-        "days": 12,
-        "nights": 11
-      },
-      "price": 85000,
-      "currency": "PKR",
-      "description": "Ultimate adventure trek to K2 Base Camp, one of the world's most challenging and rewarding expeditions.",
-      "mainImage": "/home6.jpg",
-      "gallery": [
-        "/package/skardu.jpg",
-        "/package/gilgitt.jpg",
-        "/package/honza.jpg"
-      ],
-      "destinations": [
-        {
-          "name": "Skardu",
-          "stayDays": 2,
-          "image": "/package/skardu.jpg"
-        },
-        {
-          "name": "Askole",
-          "stayDays": 1,
-          "image": "/package/gilgitt.jpg"
-        },
-        {
-          "name": "K2 Base Camp",
-          "stayDays": 9,
-          "image": "/package/honza.jpg"
-        }
-      ],
-      "accommodation": {
-        "hotelCategory": "Camps & 3 Star",
-        "roomType": "Tents/Sharing",
-        "totalNights": 11
-      },
-      "transport": {
-        "mode": "Jeeps & Trekking",
-        "fuelIncluded": true,
-        "driver": true,
-        "airportTransfers": true
-      },
-      "includes": [
-        "All accommodation",
-        "All meals during trek",
-        "Professional trekking guide",
-        "Porter services",
-        "Camping equipment",
-        "Permits & fees",
-        "Medical kit"
-      ],
-      "excludes": [
-        "Personal trekking gear",
-        "Travel insurance (mandatory)",
-        "Tips for porters/guides",
-        "Emergency evacuation"
-      ],
-      "idealFor": ["Adventure Enthusiasts", "Experienced Trekkers"],
-      "status": "active"
-    }
-  ], 
-  "destinations": [
-    {
-      "id": 1,
-      "slug": "skardu-valley",
-      "name": "Skardu Valley",
-      "region": "Gilgit-Baltistan",
-      "shortDescription": "Gateway to some of the world's highest peaks and pristine lakes",
-      "fullDescription": "Skardu Valley, located in Gilgit-Baltistan, is a paradise for adventure seekers and nature lovers. Known as the gateway to K2 and other towering peaks, Skardu offers stunning landscapes, crystal-clear lakes, and ancient forts.",
-      "mainImage": "/package/gilgitt.jpg",
-      "gallery": ["/package/gilgitt.jpg", "/package/skardu.jpg", "/home2.jpg"],
-      "attractions": ["Shangrila Resort", "Deosai National Park", "Satpara Lake", "Shigar Fort", "Mantoka Waterfall", "Katpana Desert"],
-      "bestTimeToVisit": "April to October",
-      "activities": ["Trekking", "Camping", "Photography", "Boating", "Jeep Safari"],
-      "altitude": "2,228 meters",
-      "temperature": "Summer: 15-25°C, Winter: -10 to 10°C",
-      "featured": true
-    },
-    {
-      "id": 2,
-      "slug": "fairy-meadows",
-      "name": "Fairy Meadows",
-      "region": "Gilgit-Baltistan",
-      "shortDescription": "A piece of heaven at the base of Nanga Parbat",
-      "fullDescription": "Fairy Meadows is a breathtaking alpine meadow located at the base of Nanga Parbat, the ninth highest mountain in the world. This green paradise offers unparalleled views of the 'Killer Mountain'.",
-      "mainImage": "/package/honza.jpg",
-      "gallery": ["/package/honza.jpg", "/home3.jpg", "/mountain1.jpg"],
-      "attractions": ["Nanga Parbat Base Camp", "Beyal Camp", "Raikot Glacier", "Alpine Meadows", "Tato Village"],
-      "bestTimeToVisit": "May to September",
-      "activities": ["Trekking", "Camping", "Mountain Climbing", "Photography", "Stargazing"],
-      "altitude": "3,300 meters",
-      "temperature": "Summer: 10-20°C, Winter: Below 0°C",
-      "featured": true
-    },
-    {
-      "id": 3,
-      "slug": "swat-valley",
-      "name": "Swat Valley",
-      "region": "Khyber Pakhtunkhwa",
-      "shortDescription": "The Switzerland of Pakistan with lush green valleys",
-      "fullDescription": "Swat Valley, often called the 'Switzerland of Pakistan', is a picturesque valley in KPK known for its stunning natural beauty, ancient Buddhist heritage, and warm hospitality.",
-      "mainImage": "/home3.jpg",
-      "gallery": ["/home3.jpg", "/package/skardu.jpg", "/mountain2.jpg"],
-      "attractions": ["Malam Jabba Ski Resort", "Kalam Valley", "Mahodand Lake", "Mingora City", "Buddhist Stupas", "Ushu Forest"],
-      "bestTimeToVisit": "March to October",
-      "activities": ["Skiing", "Hiking", "River Rafting", "Fishing", "Cultural Tours"],
-      "altitude": "980 meters",
-      "temperature": "Summer: 20-30°C, Winter: 0-15°C",
-      "featured": true
-    },
-    {
-      "id": 4,
-      "slug": "naran-valley",
-      "name": "Naran Valley",
-      "region": "Khyber Pakhtunkhwa",
-      "shortDescription": "Spectacular valley with Lake Saif ul Malook",
-      "fullDescription": "Naran Valley is one of Pakistan's most popular tourist destinations, known for its stunning natural beauty and the legendary Lake Saif ul Malook.",
-      "mainImage": "/home5.jpg",
-      "gallery": ["/home5.jpg", "/package/gilgitt.jpg", "/home4.jpg"],
-      "attractions": ["Lake Saif ul Malook", "Lalazar", "Babusar Pass", "Lulusar Lake", "Ansoo Lake", "Kaghan Valley"],
-      "bestTimeToVisit": "May to September",
-      "activities": ["Hiking", "Jeep Safari", "Boating", "Photography", "Horse Riding"],
-      "altitude": "2,409 meters",
-      "temperature": "Summer: 15-25°C, Winter: -5 to 10°C",
-      "featured": true
-    }
-  ],
-  "customers": [
-{
-"id": 1,
-"name": "Ali Khan",
-"email": "[ali@gmail.com](mailto:ali@gmail.com)",
-"phone": "03001234567",
-"profilePic": "[https://randomuser.me/api/portraits/men/32.jpg](https://randomuser.me/api/portraits/men/32.jpg)"
-},
-{
-"id": 2,
-"name": "Sara Ahmed",
-"email": "[sara@gmail.com](mailto:sara@gmail.com)",
-"phone": "03007654321",
-"profilePic": "[https://randomuser.me/api/portraits/women/33.jpg](https://randomuser.me/api/portraits/women/33.jpg)"
-},
-{
-"id": 3,
-"name": "Ahmed Raza",
-"email": "[ahmed@gmail.com](mailto:ahmed@gmail.com)",
-"phone": "03009876543",
-"profilePic": "[https://randomuser.me/api/portraits/men/34.jpg](https://randomuser.me/api/portraits/men/34.jpg)"
-}
-]
-}
+// {
+// "tours": [
+//   {
+//     "id": 1,
+//     "title": "03 Days Tour - Neelum Valley",
+//     "slug": "neelum-valley-3-days",
+//     "location": "Neelum Valley, Kashmir",
+//     "days": 3,
+//     "nights": 2,
+//     "price": 14000,
+//     "image": "/home3.jpg",
+//     "gallery": ["/home3.jpg", "/package/skardu.jpg", "/mountain2.jpg"],
+//     "shortDescription": "Explore the stunning beauty of Neelum Valley",
+//     "fullDescription": "Experience the breathtaking beauty of Neelum Valley with this 3-day tour. Visit pristine locations, enjoy crystal-clear streams, and immerse yourself in the natural paradise of Kashmir.",
+//     "highlights": [
+//       "Visit Keran and Sharda",
+//       "Explore Arang Kel",
+//       "Neelum River views",
+//       "Local cuisine experience"
+//     ],
+//     "inclusions": [
+//       "Transportation",
+//       "2 Nights Hotel Stay",
+//       "Breakfast",
+//       "Guided Tours"
+//     ],
+//     "exclusions": [
+//       "Lunch & Dinner",
+//       "Personal Expenses",
+//       "Travel Insurance"
+//     ],
+//     "itinerary": [
+//       {
+//         "day": 1,
+//         "title": "Arrival & Keran Visit",
+//         "description": "Arrive in Muzaffarabad, drive to Keran, enjoy scenic views of the Neelum River"
+//       },
+//       {
+//         "day": 2,
+//         "title": "Sharda & Arang Kel",
+//         "description": "Visit Sharda University ruins, hike to Arang Kel meadows"
+//       },
+//       {
+//         "day": 3,
+//         "title": "Return Journey",
+//         "description": "Morning at leisure, return to Muzaffarabad"
+//       }
+//     ],
+//     "solo": 14000,
+//     "couple": 31500,
+//     "deluxe": 45000,
+//     "featured": true
+//   },
+//   {
+//     "id": 2,
+//     "title": "05 Days Tour - Hunza Valley",
+//     "slug": "hunza-valley-5-days",
+//     "location": "Hunza Valley, Gilgit-Baltistan",
+//     "days": 5,
+//     "nights": 4,
+//     "price": 21000,
+//     "image": "/home1.jpg",
+//     "gallery": ["/home1.jpg", "/package/honza.jpg", "/home6.jpg"],
+//     "shortDescription": "Discover the enchanting Hunza Valley",
+//     "fullDescription": "Embark on a 5-day journey through Hunza Valley, home to ancient forts, stunning glaciers, and warm hospitality. Experience the legendary beauty that has captivated travelers for centuries.",
+//     "highlights": [
+//       "Baltit & Altit Forts",
+//       "Attabad Lake boat ride",
+//       "Passu Cones view",
+//       "Eagle's Nest sunset",
+//       "Local Hunza cuisine"
+//     ],
+//     "inclusions": [
+//       "Private Transportation",
+//       "4 Nights Hotel Stay",
+//       "Daily Breakfast",
+//       "Sightseeing Tours",
+//       "Professional Guide"
+//     ],
+//     "exclusions": [
+//       "Lunch & Dinner",
+//       "Entrance Fees",
+//       "Personal Shopping"
+//     ],
+//     "itinerary": [
+//       {
+//         "day": 1,
+//         "title": "Islamabad to Hunza",
+//         "description": "Depart early morning via Karakoram Highway, stop at viewpoints"
+//       },
+//       {
+//         "day": 2,
+//         "title": "Karimabad Exploration",
+//         "description": "Visit Baltit Fort, Altit Fort, explore local bazaar"
+//       },
+//       {
+//         "day": 3,
+//         "title": "Attabad Lake & Passu",
+//         "description": "Boat ride at Attabad Lake, visit Passu Cones and suspension bridge"
+//       },
+//       {
+//         "day": 4,
+//         "title": "Eagle's Nest & Duikar",
+//         "description": "Watch sunset from Eagle's Nest, visit Duikar village"
+//       },
+//       {
+//         "day": 5,
+//         "title": "Return Journey",
+//         "description": "Morning shopping, return to Islamabad"
+//       }
+//     ],
+//     "solo": 21000,
+//     "couple": 52000,
+//     "deluxe": 90000,
+//     "featured": true
+//   },
+//   {
+//     "id": 3,
+//     "title": "04 Days Tour - Skardu Valley",
+//     "slug": "skardu-valley-4-days",
+//     "location": "Skardu, Gilgit-Baltistan",
+//     "days": 4,
+//     "nights": 3,
+//     "price": 18000,
+//     "image": "/home2.jpg",
+//     "gallery": ["/home2.jpg", "/package/gilgitt.jpg", "/package/skardu.jpg"],
+//     "shortDescription": "Gateway to K2 and stunning lakes",
+//     "fullDescription": "Explore Skardu, the gateway to some of world's highest peaks. Visit crystal-clear lakes, ancient forts, and experience the serenity of this mountain paradise.",
+//     "highlights": [
+//       "Shangrila Resort",
+//       "Satpara Lake",
+//       "Shigar Fort",
+//       "Katpana Desert",
+//       "Local culture"
+//     ],
+//     "inclusions": [
+//       "Transportation",
+//       "3 Nights Accommodation",
+//       "Breakfast",
+//       "Sightseeing",
+//       "Guide Services"
+//     ],
+//     "exclusions": [
+//       "Meals (Lunch/Dinner)",
+//       "Personal Expenses",
+//       "Optional Activities"
+//     ],
+//     "itinerary": [
+//       {
+//         "day": 1,
+//         "title": "Arrival in Skardu",
+//         "description": "Flight to Skardu, check-in, visit Kharpocho Fort"
+//       },
+//       {
+//         "day": 2,
+//         "title": "Shangrila & Satpara",
+//         "description": "Visit Shangrila Resort, Satpara Lake, Upper Kachura"
+//       },
+//       {
+//         "day": 3,
+//         "title": "Shigar Valley",
+//         "description": "Explore Shigar Fort, Cold Desert, local villages"
+//       },
+//       {
+//         "day": 4,
+//         "title": "Departure",
+//         "description": "Morning at leisure, flight back"
+//       }
+//     ],
+//     "solo": 18000,
+//     "couple": 42000,
+//     "deluxe": 75000,
+//     "featured": true
+//   },
+//   {
+//     "id": 4,
+//     "title": "06 Days Tour - Swat & Kalam",
+//     "slug": "swat-kalam-6-days",
+//     "location": "Swat Valley, KPK",
+//     "days": 6,
+//     "nights": 5,
+//     "price": 25000,
+//     "image": "/home3.jpg",
+//     "gallery": ["/home3.jpg", "/mountain1.jpg", "/mountain2.jpg"],
+//     "shortDescription": "Switzerland of Pakistan adventure",
+//     "fullDescription": "Discover Swat Valley, known as the Switzerland of Pakistan. This 6-day tour takes you through lush valleys, pristine lakes, and historic sites.",
+//     "highlights": [
+//       "Malam Jabba Ski Resort",
+//       "Mahodand Lake",
+//       "Kalam Valley",
+//       "Buddhist Stupas",
+//       "Mingora Bazaar"
+//     ],
+//     "inclusions": [
+//       "Private Transport",
+//       "5 Nights Hotels",
+//       "All Breakfasts",
+//       "Sightseeing Tours",
+//       "Professional Guide"
+//     ],
+//     "exclusions": [
+//       "Lunch & Dinner",
+//       "Ski Equipment",
+//       "Personal Shopping"
+//     ],
+//     "itinerary": [
+//       {
+//         "day": 1,
+//         "title": "Islamabad to Swat",
+//         "description": "Drive to Mingora, check-in, explore local bazaar"
+//       },
+//       {
+//         "day": 2,
+//         "title": "Malam Jabba",
+//         "description": "Visit Malam Jabba Ski Resort, cable car ride"
+//       },
+//       {
+//         "day": 3,
+//         "title": "Kalam Valley",
+//         "description": "Drive to Kalam, explore Ushu Forest, Mahodand Lake"
+//       },
+//       {
+//         "day": 4,
+//         "title": "Mahodand Lake Trek",
+//         "description": "Full day at Mahodand Lake"
+//       },
+//       {
+//         "day": 5,
+//         "title": "Buddhist Sites",
+//         "description": "Visit Buddhist stupas and monasteries"
+//       },
+//       {
+//         "day": 6,
+//         "title": "Return",
+//         "description": "Drive back to Islamabad"
+//       }
+//     ],
+//     "solo": 25000,
+//     "couple": 58000,
+//     "deluxe": 95000,
+//     "featured": true
+//   }
+// ],
+//  "packages": [
+//     {
+//       "id": 1,
+//       "slug": "northern-adventure-7-days",
+//       "title": "Northern Adventure – 7 Days",
+//       "duration": {
+//         "days": 7,
+//         "nights": 6
+//       },
+//       "price": 30000,
+//       "currency": "PKR",
+//       "description": "Explore Hunza, Skardu and Gilgit in one unforgettable northern adventure with breathtaking mountain views.",
+//       "mainImage": "/home1.jpg",
+//       "gallery": [
+//         "/package/gilgitt.jpg",
+//         "/package/honza.jpg",
+//         "/package/skardu.jpg"
+//       ],
+//       "destinations": [
+//         {
+//           "name": "Hunza",
+//           "stayDays": 3,
+//           "image": "/package/gilgitt.jpg" 
+//         },
+//         {
+//           "name": "Skardu",
+//           "stayDays": 2,
+//           "image": "/package/honza.jpg"
+//         },
+//         {
+//           "name": "Gilgit",
+//           "stayDays": 2,
+//           "image": "/package/skardu.jpg" 
+//         }
+//       ],
+//       "itinerary": [
+//         {
+//           "day": 1,
+//           "title": "Islamabad → Gilgit",
+//           "activities": [
+//             "Early morning departure from Islamabad",
+//             "Flight to Gilgit",
+//             "Hotel check-in & rest",
+//             "Evening walk in Gilgit Bazaar"
+//           ],
+//           "meals": ["Lunch", "Dinner"],
+//           "stay": "Gilgit"
+//         },
+//         {
+//           "day": 2,
+//           "title": "Gilgit → Hunza",
+//           "activities": [
+//             "Drive towards Hunza Valley",
+//             "Rakaposhi viewpoint",
+//             "Visit Altit Fort"
+//           ],
+//           "meals": ["Breakfast", "Dinner"],
+//           "stay": "Hunza"
+//         }
+//       ],
+//       "accommodation": {
+//         "hotelCategory": "3-4 Star Hotels",
+//         "roomType": "Sharing basis",
+//         "totalNights": 6,
+//         "cities": ["Gilgit", "Hunza", "Skardu"]
+//       },
+//       "transport": {
+//         "mode": "Coaster/Prado",
+//         "fuelIncluded": true,
+//         "driver": true,
+//         "airportTransfers": true
+//       },
+//       "includes": [
+//         "Hotel accommodation",
+//         "Daily breakfast",
+//         "Private transport",
+//         "Fuel & toll taxes",
+//         "Driver allowance",
+//         "Sightseeing tours"
+//       ],
+//       "excludes": [
+//         "Personal expenses",
+//         "Travel insurance",
+//         "Extra meals",
+//         "Any activity not mentioned"
+//       ],
+//       "idealFor": ["Families", "Couples", "Friends"],
+//       "status": "active"
+//     },
+//     {
+//       "id": 2,
+//       "slug": "kpk-explorer-5-days",
+//       "title": "KPK Explorer – 5 Days",
+//       "duration": {
+//         "days": 5,
+//         "nights": 4
+//       },
+//       "price": 22000,
+//       "currency": "PKR",
+//       "description": "Discover Swat Valley, Malam Jabba ski resort and historic Mingora in this scenic KPK adventure.",
+//       "mainImage": "/home3.jpg",
+//       "gallery": [
+//         "/package/gilgitt.jpg",
+//         "/package/honza.jpg",
+//         "/package/skardu.jpg"
+//       ],
+//       "destinations": [
+//         {
+//           "name": "Swat Valley",
+//           "stayDays": 2,
+//           "image": "/package/gilgitt.jpg"
+//         },
+//         {
+//           "name": "Malam Jabba",
+//           "stayDays": 2,
+//           "image": "/package/honza.jpg"
+//         },
+//         {
+//           "name": "Mingora",
+//           "stayDays": 1,
+//           "image": "/package/skardu.jpg"
+//         }
+//       ],
+//       "accommodation": {
+//         "hotelCategory": "3 Star Hotels",
+//         "roomType": "Sharing basis",
+//         "totalNights": 4
+//       },
+//       "transport": {
+//         "mode": "Private Hiace",
+//         "fuelIncluded": true,
+//         "driver": true
+//       },
+//       "includes": [
+//         "Hotel stay",
+//         "Breakfast included",
+//         "Sightseeing tours",
+//         "Transport with fuel",
+//         "Professional guide"
+//       ],
+//       "excludes": [
+//         "Lunch & dinner",
+//         "Personal expenses",
+//         "Ski equipment rental"
+//       ],
+//       "idealFor": ["Adventure Seekers", "Families", "Nature Lovers"],
+//       "status": "active"
+//     },
+//     {
+//       "id": 3,
+//       "slug": "skardu-deosai-tour-6-days",
+//       "title": "Skardu & Deosai Plains – 6 Days",
+//       "duration": {
+//         "days": 6,
+//         "nights": 5
+//       },
+//       "price": 35000,
+//       "currency": "PKR",
+//       "description": "Experience the majestic beauty of Skardu, Deosai National Park, and Shangrila Resort on this premium tour.",
+//       "mainImage": "/home2.jpg",
+//       "gallery": [
+//         "/package/skardu.jpg",
+//         "/package/gilgitt.jpg",
+//         "/package/honza.jpg"
+//       ],
+//       "destinations": [
+//         {
+//           "name": "Skardu City",
+//           "stayDays": 2,
+//           "image": "/package/skardu.jpg"
+//         },
+//         {
+//           "name": "Deosai Plains",
+//           "stayDays": 2,
+//           "image": "/package/gilgitt.jpg"
+//         },
+//         {
+//           "name": "Shangrila",
+//           "stayDays": 2,
+//           "image": "/package/honza.jpg"
+//         }
+//       ],
+//       "accommodation": {
+//         "hotelCategory": "4 Star Hotels",
+//         "roomType": "Double/Twin",
+//         "totalNights": 5
+//       },
+//       "transport": {
+//         "mode": "4x4 Jeeps",
+//         "fuelIncluded": true,
+//         "driver": true,
+//         "airportTransfers": true
+//       },
+//       "includes": [
+//         "Luxury accommodation",
+//         "All meals (Breakfast, Lunch, Dinner)",
+//         "4x4 Jeep transport",
+//         "Professional guide",
+//         "Entry fees to parks",
+//         "Photography stops"
+//       ],
+//       "excludes": [
+//         "Personal expenses",
+//         "Travel insurance",
+//         "Tips for staff"
+//       ],
+//       "idealFor": ["Photographers", "Nature Lovers", "Luxury Travelers"],
+//       "status": "active"
+//     },
+//     {
+//       "id": 4,
+//       "slug": "kashmir-neelum-valley-4-days",
+//       "title": "Kashmir & Neelum Valley – 4 Days",
+//       "duration": {
+//         "days": 4,
+//         "nights": 3
+//       },
+//       "price": 18000,
+//       "currency": "PKR",
+//       "description": "Explore the paradise of Kashmir with visits to Muzaffarabad, Sharda, and the stunning Neelum Valley.",
+//       "mainImage": "/home4.jpg",
+//       "gallery": [
+//         "/package/honza.jpg",
+//         "/package/skardu.jpg",
+//         "/package/gilgitt.jpg"
+//       ],
+//       "destinations": [
+//         {
+//           "name": "Muzaffarabad",
+//           "stayDays": 1,
+//           "image": "/package/honza.jpg"
+//         },
+//         {
+//           "name": "Neelum Valley",
+//           "stayDays": 2,
+//           "image": "/package/skardu.jpg"
+//         },
+//         {
+//           "name": "Sharda",
+//           "stayDays": 1,
+//           "image": "/package/gilgitt.jpg"
+//         }
+//       ],
+//       "accommodation": {
+//         "hotelCategory": "3 Star Hotels",
+//         "roomType": "Sharing basis",
+//         "totalNights": 3
+//       },
+//       "transport": {
+//         "mode": "Private Hiace",
+//         "fuelIncluded": true,
+//         "driver": true
+//       },
+//       "includes": [
+//         "Hotel accommodation",
+//         "Breakfast",
+//         "Transport with fuel",
+//         "Sightseeing tours",
+//         "Local guide"
+//       ],
+//       "excludes": [
+//         "Lunch & dinner",
+//         "Personal shopping",
+//         "Adventure activities"
+//       ],
+//       "idealFor": ["Couples", "Families", "Solo Travelers"],
+//       "status": "active"
+//     },
+//     {
+//       "id": 5,
+//       "slug": "naran-kaghan-shogran-5-days",
+//       "title": "Naran, Kaghan & Shogran – 5 Days",
+//       "duration": {
+//         "days": 5,
+//         "nights": 4
+//       },
+//       "price": 20000,
+//       "currency": "PKR",
+//       "description": "Journey through the lush green valleys of Naran, Kaghan, and Shogran with stops at Lake Saif ul Malook.",
+//       "mainImage": "/home5.jpg",
+//       "gallery": [
+//         "/package/gilgitt.jpg",
+//         "/package/honza.jpg",
+//         "/package/skardu.jpg"
+//       ],
+//       "destinations": [
+//         {
+//           "name": "Naran",
+//           "stayDays": 2,
+//           "image": "/package/gilgitt.jpg"
+//         },
+//         {
+//           "name": "Kaghan",
+//           "stayDays": 1,
+//           "image": "/package/honza.jpg"
+//         },
+//         {
+//           "name": "Shogran",
+//           "stayDays": 2,
+//           "image": "/package/skardu.jpg"
+//         }
+//       ],
+//       "accommodation": {
+//         "hotelCategory": "3 Star Hotels",
+//         "roomType": "Double/Twin",
+//         "totalNights": 4
+//       },
+//       "transport": {
+//         "mode": "Coaster/Hiace",
+//         "fuelIncluded": true,
+//         "driver": true
+//       },
+//       "includes": [
+//         "Hotel stay",
+//         "Daily breakfast",
+//         "Private transport",
+//         "Lake Saif ul Malook jeep",
+//         "Sightseeing tours"
+//       ],
+//       "excludes": [
+//         "Lunch & dinner",
+//         "Horse riding charges",
+//         "Personal expenses"
+//       ],
+//       "idealFor": ["Families", "Friends", "Honeymooners"],
+//       "status": "active"
+//     },
+//     {
+//       "id": 6,
+//       "slug": "k2-base-camp-trek-12-days",
+//       "title": "K2 Base Camp Trek – 12 Days",
+//       "duration": {
+//         "days": 12,
+//         "nights": 11
+//       },
+//       "price": 85000,
+//       "currency": "PKR",
+//       "description": "Ultimate adventure trek to K2 Base Camp, one of the world's most challenging and rewarding expeditions.",
+//       "mainImage": "/home6.jpg",
+//       "gallery": [
+//         "/package/skardu.jpg",
+//         "/package/gilgitt.jpg",
+//         "/package/honza.jpg"
+//       ],
+//       "destinations": [
+//         {
+//           "name": "Skardu",
+//           "stayDays": 2,
+//           "image": "/package/skardu.jpg"
+//         },
+//         {
+//           "name": "Askole",
+//           "stayDays": 1,
+//           "image": "/package/gilgitt.jpg"
+//         },
+//         {
+//           "name": "K2 Base Camp",
+//           "stayDays": 9,
+//           "image": "/package/honza.jpg"
+//         }
+//       ],
+//       "accommodation": {
+//         "hotelCategory": "Camps & 3 Star",
+//         "roomType": "Tents/Sharing",
+//         "totalNights": 11
+//       },
+//       "transport": {
+//         "mode": "Jeeps & Trekking",
+//         "fuelIncluded": true,
+//         "driver": true,
+//         "airportTransfers": true
+//       },
+//       "includes": [
+//         "All accommodation",
+//         "All meals during trek",
+//         "Professional trekking guide",
+//         "Porter services",
+//         "Camping equipment",
+//         "Permits & fees",
+//         "Medical kit"
+//       ],
+//       "excludes": [
+//         "Personal trekking gear",
+//         "Travel insurance (mandatory)",
+//         "Tips for porters/guides",
+//         "Emergency evacuation"
+//       ],
+//       "idealFor": ["Adventure Enthusiasts", "Experienced Trekkers"],
+//       "status": "active"
+//     }
+//   ], 
+//   "destinations": [
+//     {
+//       "id": 1,
+//       "slug": "skardu-valley",
+//       "name": "Skardu Valley",
+//       "region": "Gilgit-Baltistan",
+//       "shortDescription": "Gateway to some of the world's highest peaks and pristine lakes",
+//       "fullDescription": "Skardu Valley, located in Gilgit-Baltistan, is a paradise for adventure seekers and nature lovers. Known as the gateway to K2 and other towering peaks, Skardu offers stunning landscapes, crystal-clear lakes, and ancient forts.",
+//       "mainImage": "/package/gilgitt.jpg",
+//       "gallery": ["/package/gilgitt.jpg", "/package/skardu.jpg", "/home2.jpg"],
+//       "attractions": ["Shangrila Resort", "Deosai National Park", "Satpara Lake", "Shigar Fort", "Mantoka Waterfall", "Katpana Desert"],
+//       "bestTimeToVisit": "April to October",
+//       "activities": ["Trekking", "Camping", "Photography", "Boating", "Jeep Safari"],
+//       "altitude": "2,228 meters",
+//       "temperature": "Summer: 15-25°C, Winter: -10 to 10°C",
+//       "featured": true
+//     },
+//     {
+//       "id": 2,
+//       "slug": "fairy-meadows",
+//       "name": "Fairy Meadows",
+//       "region": "Gilgit-Baltistan",
+//       "shortDescription": "A piece of heaven at the base of Nanga Parbat",
+//       "fullDescription": "Fairy Meadows is a breathtaking alpine meadow located at the base of Nanga Parbat, the ninth highest mountain in the world. This green paradise offers unparalleled views of the 'Killer Mountain'.",
+//       "mainImage": "/package/honza.jpg",
+//       "gallery": ["/package/honza.jpg", "/home3.jpg", "/mountain1.jpg"],
+//       "attractions": ["Nanga Parbat Base Camp", "Beyal Camp", "Raikot Glacier", "Alpine Meadows", "Tato Village"],
+//       "bestTimeToVisit": "May to September",
+//       "activities": ["Trekking", "Camping", "Mountain Climbing", "Photography", "Stargazing"],
+//       "altitude": "3,300 meters",
+//       "temperature": "Summer: 10-20°C, Winter: Below 0°C",
+//       "featured": true
+//     },
+//     {
+//       "id": 3,
+//       "slug": "swat-valley",
+//       "name": "Swat Valley",
+//       "region": "Khyber Pakhtunkhwa",
+//       "shortDescription": "The Switzerland of Pakistan with lush green valleys",
+//       "fullDescription": "Swat Valley, often called the 'Switzerland of Pakistan', is a picturesque valley in KPK known for its stunning natural beauty, ancient Buddhist heritage, and warm hospitality.",
+//       "mainImage": "/home3.jpg",
+//       "gallery": ["/home3.jpg", "/package/skardu.jpg", "/mountain2.jpg"],
+//       "attractions": ["Malam Jabba Ski Resort", "Kalam Valley", "Mahodand Lake", "Mingora City", "Buddhist Stupas", "Ushu Forest"],
+//       "bestTimeToVisit": "March to October",
+//       "activities": ["Skiing", "Hiking", "River Rafting", "Fishing", "Cultural Tours"],
+//       "altitude": "980 meters",
+//       "temperature": "Summer: 20-30°C, Winter: 0-15°C",
+//       "featured": true
+//     },
+//     {
+//       "id": 4,
+//       "slug": "naran-valley",
+//       "name": "Naran Valley",
+//       "region": "Khyber Pakhtunkhwa",
+//       "shortDescription": "Spectacular valley with Lake Saif ul Malook",
+//       "fullDescription": "Naran Valley is one of Pakistan's most popular tourist destinations, known for its stunning natural beauty and the legendary Lake Saif ul Malook.",
+//       "mainImage": "/home5.jpg",
+//       "gallery": ["/home5.jpg", "/package/gilgitt.jpg", "/home4.jpg"],
+//       "attractions": ["Lake Saif ul Malook", "Lalazar", "Babusar Pass", "Lulusar Lake", "Ansoo Lake", "Kaghan Valley"],
+//       "bestTimeToVisit": "May to September",
+//       "activities": ["Hiking", "Jeep Safari", "Boating", "Photography", "Horse Riding"],
+//       "altitude": "2,409 meters",
+//       "temperature": "Summer: 15-25°C, Winter: -5 to 10°C",
+//       "featured": true
+//     }
+//   ],
+//   "customers": [
+// {
+// "id": 1,
+// "name": "Ali Khan",
+// "email": "[ali@gmail.com](mailto:ali@gmail.com)",
+// "phone": "03001234567",
+// "profilePic": "[https://randomuser.me/api/portraits/men/32.jpg](https://randomuser.me/api/portraits/men/32.jpg)"
+// },
+// {
+// "id": 2,
+// "name": "Sara Ahmed",
+// "email": "[sara@gmail.com](mailto:sara@gmail.com)",
+// "phone": "03007654321",
+// "profilePic": "[https://randomuser.me/api/portraits/women/33.jpg](https://randomuser.me/api/portraits/women/33.jpg)"
+// },
+// {
+// "id": 3,
+// "name": "Ahmed Raza",
+// "email": "[ahmed@gmail.com](mailto:ahmed@gmail.com)",
+// "phone": "03009876543",
+// "profilePic": "[https://randomuser.me/api/portraits/men/34.jpg](https://randomuser.me/api/portraits/men/34.jpg)"
+// }
+// ]
+// }
