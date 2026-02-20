@@ -64,7 +64,9 @@ export default function TourDetailPage() {
   if (loading) {
     return (
       <div className={styles.loadingWrapper}>
-        <Spin size="large" tip="Loading tour details..." />
+        <Spin size="large" tip="Loading tour details...">
+          <div style={{ minHeight: 120 }} />
+        </Spin>
       </div>
     );
   }

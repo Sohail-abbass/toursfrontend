@@ -13,20 +13,20 @@ const { Option } = Select;
 
 export default function Package() {
   const dispatch = useDispatch<AppDispatch>();
-  const { packages, loading, error } = useSelector(
-    (state: RootState) => state.packages
-  );
+  // Subscribe to each field so component re-renders when store updates
+  const packages = useSelector((state: RootState) => state.packages.packages);
+  const loading = useSelector((state: RootState) => state.packages.loading);
+  const error = useSelector((state: RootState) => state.packages.error);
 
   const [filteredPackages, setFilteredPackages] = useState(packages);
   const [searchTerm, setSearchTerm] = useState("");
   const [sortBy, setSortBy] = useState("default");
   const [priceFilter, setPriceFilter] = useState("all");
 
+  // Always fetch on mount so data is in sync and component re-renders when fulfilled
   useEffect(() => {
-    if (!packages.length) {
-      dispatch(fetchPackages());
-    }
-  }, [dispatch, packages.length]);
+    dispatch(fetchPackages());
+  }, [dispatch]);
 
   useEffect(() => {
     let result = [...packages];
@@ -78,11 +78,13 @@ export default function Package() {
 
     setFilteredPackages(result);
   }, [packages, searchTerm, sortBy, priceFilter]);
-console.log("packages data in package component",packages);
+
   if (loading) {
     return (
       <div className={styles.pkgCenter}>
-        <Spin size="large" tip="Loading amazing packages..." />
+        <Spin size="large" tip="Loading amazing packages...">
+          <div style={{ minHeight: 120 }} />
+        </Spin>
       </div>
     );
   }
@@ -161,7 +163,7 @@ console.log("packages data in package component",packages);
       {filteredPackages.length > 0 ? (
         <div className={styles.packageGrid}>
           {filteredPackages.map((pkg) => (
-            <PackageCard key={pkg.id} pkg={pkg} />
+            <PackageCard key={(pkg as any)._id ?? pkg.slug} pkg={pkg} />
           ))}
         </div>
       ) : (

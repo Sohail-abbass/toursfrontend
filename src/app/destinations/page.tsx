@@ -40,7 +40,9 @@ export default function DestinationsPage() {
   if (loading) {
     return (
       <div className={styles.loadingWrapper}>
-        <Spin size="large" tip="Loading destinations..." />
+        <Spin size="large" tip="Loading destinations...">
+          <div style={{ minHeight: 120 }} />
+        </Spin>
       </div>
     );
   }

@@ -63,7 +63,8 @@ const tourSlice = createSlice({
     });
     builder.addCase(fetchTours.fulfilled, (state, action: PayloadAction<Tour[]>) => {
       state.loading = false;
-      state.tours = action.payload;
+      const list = Array.isArray(action.payload) ? action.payload : (action.payload as any)?.data ?? [];
+      state.tours = list;
     });
     builder.addCase(fetchTours.rejected, (state, action) => {
       state.loading = false;

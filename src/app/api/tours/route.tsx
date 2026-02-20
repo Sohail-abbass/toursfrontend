@@ -9,10 +9,11 @@ const BASE_URL =
   process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:5000/api";
 
 // 🔹 Get all tours (uses GET /api/tours)
+// Backend returns { success, count, total, page, pages, data } – we return the array
 export const getTours = async () => {
   const res = await axios.get(`${BASE_URL}/tours`);
-  console.log("getTours response:", res.data);
-  return res.data;
+  const data = res.data?.data ?? res.data;
+  return Array.isArray(data) ? data : [];
 };
 
 // 🔹 Get tour by Mongo ID (uses GET /api/tours/id/:id)

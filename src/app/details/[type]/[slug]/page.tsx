@@ -1,4 +1,5 @@
 "use client";
+import { submitBooking } from "@/app/api/booking/route";
 
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
@@ -15,7 +16,7 @@ import {
   StarFilled,
   CameraOutlined
 } from '@ant-design/icons';
-import { FaArrowRight } from 'react-icons/fa';
+// import { FaArrowRight } from 'react-icons/fa';
 import Link from 'next/link';
 import styles from './detailPage.module.css';
 
@@ -31,6 +32,7 @@ export default function UnifiedDetailPage() {
   const [selectedPackage, setSelectedPackage] = useState('solo');
   const [activeImage, setActiveImage] = useState(0);
   const [isTour, setIsTour] = useState(true);
+  const [submitting, setSubmitting] = useState(false);
 
   useEffect(() => {
     fetchData();
@@ -57,35 +59,70 @@ export default function UnifiedDetailPage() {
     }
   };
 
-  const onFinish = (values: any) => {
-    const bookingData = {
-      ...values,
-      itemType: isTour ? 'Tour' : 'Package',
-      itemName: data?.title,
-      package: selectedPackage,
-      totalPrice: getCurrentPrice()
-    };
-    console.log('Booking submitted:', bookingData);
-    message.success(`${isTour ? 'Tour' : 'Package'} booking request submitted! We'll contact you soon.`);
-    form.resetFields();
-  };
-
-  const getCurrentPrice = () => {
-    if (isTour) {
-      switch (selectedPackage) {
-        case 'couple': return data?.couple || data?.price * 2;
-        case 'deluxe': return data?.deluxe || data?.price * 3;
-        default: return data?.solo || data?.price;
-      }
-    } else {
-      return data?.price || 0;
+  const onFinish = async (values: any) => {
+    if (!data?._id) {
+      message.error("Invalid item selected");
+      return;
+    }
+  
+    try {
+      setSubmitting(true);
+  
+      await submitBooking({
+        bookingType: isTour ? "tour" : "package",
+        itemId: data._id,
+  
+        customerName: values.name,
+        customerEmail: values.email,
+        customerPhone: values.phone,
+  
+        travelers: Number(values.travelers),
+  
+        packageType: isTour ? selectedPackage : undefined,
+  
+        message: values.message,
+      });
+  
+      message.success("🎉 Booking submitted successfully! We will contact you shortly.");
+  
+      form.resetFields();
+    } catch (error: any) {
+      message.error(
+        error?.response?.data?.message || "Something went wrong"
+      );
+    } finally {
+      setSubmitting(false);
     }
   };
+  
+  const getCurrentPrice = () => {
+    const basePrice = (() => {
+      if (isTour) {
+        switch (selectedPackage) {
+          case "couple":
+            return data?.couple || data?.price * 2;
+          case "deluxe":
+            return data?.deluxe || data?.price * 3;
+          default:
+            return data?.solo || data?.price;
+        }
+      } else {
+        return data?.price || 0;
+      }
+    })();
+  
+    const travelers = Number(form.getFieldValue("travelers") || 1);
+  
+    return basePrice * travelers;
+  };
+  
 
   if (loading) {
     return (
       <div className={styles.loadingWrapper}>
-        <Spin size="large" tip={`Loading ${isTour ? 'tour' : 'package'} details...`} />
+        <Spin size="large" tip={`Loading ${isTour ? 'tour' : 'package'} details...`}>
+          <div style={{ minHeight: 120 }} />
+        </Spin>
       </div>
     );
   }
@@ -424,11 +461,12 @@ export default function UnifiedDetailPage() {
                   rules={[{ required: true, message: 'Please select number of travelers' }]}
                 >
                   <Select size="large" placeholder="Number of Travelers">
-                    <Option value="1">1 Person</Option>
-                    <Option value="2">2 People</Option>
-                    <Option value="3">3 People</Option>
-                    <Option value="4">4 People</Option>
-                    <Option value="5">5+ People</Option>
+                  <Option value={1}>1 Person</Option>
+<Option value={2}>2 People</Option>
+<Option value={3}>3 People</Option>
+<Option value={4}>4 People</Option>
+<Option value={5}>5+ People</Option>
+
                   </Select>
                 </Form.Item>
 
@@ -444,15 +482,17 @@ export default function UnifiedDetailPage() {
                   <strong>PKR {getCurrentPrice().toLocaleString()}</strong>
                 </div>
 
+              
                 <Button
-                  type="primary"
-                  htmlType="submit"
-                  size="large"
-                  className={styles.bookBtn}
-                  block
-                >
-                  Confirm Booking
-                </Button>
+  type="primary"
+  htmlType="submit"
+  size="large"
+  className={styles.bookBtn}
+  block
+>
+  {submitting ? "Submitting..." : "Confirm Booking"}
+</Button>
+
               </Form>
 
               <div className={styles.supportSection}>

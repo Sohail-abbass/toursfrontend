@@ -1,42 +1,39 @@
 "use client";
 
-import React, { useState } from 'react';
-import styles from './contact.module.css';
+import React, { useState } from "react";
+import { message } from "antd";
+import styles from "./contact.module.css";
+import { submitContact } from "@/app/api/contact/route";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState(null);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      await submitContact(formData);
+      message.success("Thank you! Your message has been sent. We'll get back to you soon.");
+      setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
+    } catch (error) {
+      const msg = error.response?.data?.message || error.message || "Failed to send message. Please try again.";
+      message.error(msg);
+    } finally {
       setIsSubmitting(false);
-      setSubmitStatus('success');
-      setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
-      
-      setTimeout(() => {
-        setSubmitStatus(null);
-      }, 5000);
-    }, 1500);
+    }
   };
 
   return (
@@ -163,12 +160,6 @@ const ContactPage = () => {
             {/* Contact Form */}
             <div className={styles.formSection}>
               <h2 className={styles.formTitle}>Send Us a Message</h2>
-              
-              {submitStatus === 'success' && (
-                <div className={styles.successMessage}>
-                  ✓ Thank you! Your message has been sent successfully. We'll get back to you soon.
-                </div>
-              )}
 
               <form onSubmit={handleSubmit} className={styles.contactForm}>
                 <div className={styles.formGroup}>

@@ -10,7 +10,8 @@ import styles from "./tour.module.scss";
 export default function Tours() {
   const dispatch = useDispatch<AppDispatch>();
   const router = useRouter();
-  const { tours, loading } = useSelector((state: RootState) => state.tours);
+  const tours = useSelector((state: RootState) => state.tours.tours);
+  const loading = useSelector((state: RootState) => state.tours.loading);
 
   useEffect(() => {
     dispatch(fetchTours());
@@ -22,11 +23,13 @@ export default function Tours() {
 
   if (loading) return <p className={styles.loading}>Loading...</p>;
 
+  const tourList = Array.isArray(tours) ? tours : [];
+
   return (
     <div className={styles.toursContainer}>
-      {tours.map((tour) => (
+      {tourList.map((tour) => (
         <div 
-          key={tour.id} 
+          key={(tour as any)._id ?? tour.slug} 
           className={styles.heroTourCard}
           onClick={() => handleTourClick(tour.slug)}
         >

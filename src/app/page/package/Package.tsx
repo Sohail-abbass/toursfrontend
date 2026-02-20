@@ -10,15 +10,13 @@ import styles from "./package.module.scss";
 
 export default function Package() {
   const dispatch = useDispatch<AppDispatch>();
-  const { packages, loading, error } = useSelector(
-    (state: RootState) => state.packages
-  );
+  const packages = useSelector((state: RootState) => state.packages.packages);
+  const loading = useSelector((state: RootState) => state.packages.loading);
+  const error = useSelector((state: RootState) => state.packages.error);
 
   useEffect(() => {
-    if (!packages.length) {
-      dispatch(fetchPackages());
-    }
-  }, [dispatch, packages.length]);
+    dispatch(fetchPackages());
+  }, [dispatch]);
 
   if (loading) return <div className={styles.pkgCenter}><Spin size="large" /></div>;
   if (error) return <div className={styles.pkgCenter}>{error}</div>;
@@ -27,7 +25,7 @@ export default function Package() {
   return (
     <div className={styles.packageGrid}>
       {packages.map((pkg) => (
-        <PackageCard key={pkg.id} pkg={pkg} />
+        <PackageCard key={(pkg as any)._id ?? pkg.slug} pkg={pkg} />
       ))}
     </div>
   );

@@ -14,7 +14,6 @@ export const fetchPackages = createAsyncThunk<Package[]>(
   async (_, { rejectWithValue }) => {
     try {
       const data = await getPackages();
-      console.log("✅ fetchPackages data from API:", data); // <-- check here
       return data;
     } catch (err: any) {
       console.error("❌ fetchPackages error:", err);
@@ -57,9 +56,9 @@ const packageSlice = createSlice({
       })
       .addCase(fetchPackages.fulfilled, (state, action: PayloadAction<Package[]>) => {
         state.loading = false;
-        state.packages = action.payload;
-        console.log("✅ packages stored in Redux:", action.payload.length, action.payload);
-
+        // Support both array and { data: Package[] } from API
+        const list = Array.isArray(action.payload) ? action.payload : (action.payload as any)?.data ?? [];
+        state.packages = list;
       })
       .addCase(fetchPackages.rejected, (state, action) => {
         state.loading = false;
