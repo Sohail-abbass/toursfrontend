@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start",
     "deploy:vercel": "npm install --target_platform=linux --cpu=x64 --os=linux && vercel --prod",
     "build:linux": "next build"
@@ -23,6 +23,9 @@
     "sass": "^1.94.2",
     "styled-components": "^6.1.19"
   },
+  "engines": {
+  "node": "18.x"
+},
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^24.6.2",

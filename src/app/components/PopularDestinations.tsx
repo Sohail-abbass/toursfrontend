@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import styles from './popularDestinations.module.css';
-
+// sfsdf
 interface Destination {
   id: number;
   slug: string;
