@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
-    "start": "next start"
+    "start": "next start",
+    "deploy:vercel": "npm install --target_platform=linux --cpu=x64 --os=linux && vercel --prod",
+    "build:linux": "next build"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.9.0",

@@ -1,0 +1,10 @@
+{
+  "build": {
+    "env": {
+      "NPM_FLAGS": "--target_platform=linux --cpu=x64 --os=linux",
+      "NODE_OPTIONS": "--max_old_space_size=4096"
+    }
+  },
+  "installCommand": "npm install --target_platform=linux --cpu=x64 --os=linux",
+  "buildCommand": "next build"
+}
