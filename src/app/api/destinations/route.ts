@@ -2,7 +2,7 @@
 import { NextResponse } from 'next/server';
 
 const BASE_URL =
-  process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:5000/api";
+  process.env.NEXT_PUBLIC_BACKEND_URL;
 
 export async function GET() {
   try {
