@@ -41,10 +41,13 @@ export default function TourDetailPage() {
   useEffect(() => {
     fetchTourDetail();
   }, [params.slug]);
+const BASE_URL =
+  process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:5000/api";
 
   const fetchTourDetail = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/tours');
+      
+      const res = await axios.get(`${BASE_URL}/tours`);
       const tours = res.data;
       const foundTour = tours.find((t: Tour) => t.slug === params.slug);
       setTour(foundTour);

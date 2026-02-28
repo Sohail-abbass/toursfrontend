@@ -28,10 +28,12 @@ export default function HomePage() {
   //     setLoading(false);
   //   }
   // };
+const BASE_URL =
+  process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:5000/api";
 
   const fetchTours = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/tours');
+      const res = await axios.get(`${BASE_URL}/tours`);
       console.log("tours data in component",res.data);
       setTours(res.data);
     } catch (error) {

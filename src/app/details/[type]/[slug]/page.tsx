@@ -33,6 +33,8 @@ export default function UnifiedDetailPage() {
   const [activeImage, setActiveImage] = useState(0);
   const [isTour, setIsTour] = useState(true);
   const [submitting, setSubmitting] = useState(false);
+const BASE_URL =
+  process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:5000/api";
 
   useEffect(() => {
     fetchData();
@@ -43,7 +45,7 @@ export default function UnifiedDetailPage() {
       const type = params.type as string;
       setIsTour(type === 'tour');
       
-      let endpoint = type === 'tour' ? 'http://localhost:5000/tours' : 'http://localhost:5000/packages';
+      let endpoint = type === 'tour' ? `${BASE_URL}/tours` : `${BASE_URL}/packages`;
       const res = await axios.get(endpoint);
       const items = res.data;
       const found = items.find((item: any) => item.slug === params.slug);
