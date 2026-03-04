@@ -11,14 +11,14 @@ const BASE_URL =
 // 🔹 Get all tours (uses GET /api/tours)
 // Backend returns { success, count, total, page, pages, data } – we return the array
 export const getTours = async () => {
-  const res = await axios.get(`${BASE_URL}/tours`);
+  const res = await axios.get(`${BASE_URL}/api/tours`);
   const data = res.data?.data ?? res.data;
   return Array.isArray(data) ? data : [];
 };
 
 // 🔹 Get tour by Mongo ID (uses GET /api/tours/id/:id)
 export const getTourById = async (id: string) => {
-  const res = await axios.get(`${BASE_URL}/tours/id/${id}`);
+  const res = await axios.get(`${BASE_URL}/api/tours/id/${id}`);
   return res.data;
 };
 
@@ -37,7 +37,7 @@ export const addTour = async (tour: {
   price: number;
   image: string;
 }) => {
-  const res = await axios.post(`${BASE_URL}/tours`, tour);
+  const res = await axios.post(`${BASE_URL}/api/tours`, tour);
   return res.data;
 };
 
@@ -53,7 +53,7 @@ export const updateTour = async (
     image: string;
   }>
 ) => {
-  const res = await axios.put(`${BASE_URL}/tours/${id}`, tour);
+  const res = await axios.put(`${BASE_URL}/api/tours/${id}`, tour);
   return res.data;
 };
 

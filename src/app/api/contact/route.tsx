@@ -12,7 +12,7 @@ export interface ContactPayload {
 }
 
 export const submitContact = async (data: ContactPayload) => {
-  const res = await axios.post(`${BASE_URL}/contact`, {
+  const res = await axios.post(`${BASE_URL}/api/contact`, {
     name: String(data.name).trim(),
     email: String(data.email).trim().toLowerCase(),
     phone: String(data.phone).trim(),

@@ -33,7 +33,7 @@ const BASE_URL =
 
   const fetchTours = async () => {
     try {
-      const res = await axios.get(`${BASE_URL}/tours`);
+      const res = await axios.get(`${BASE_URL}/api/tours`);
       console.log("tours data in component",res.data);
       setTours(res.data);
     } catch (error) {
@@ -154,7 +154,7 @@ const BASE_URL =
                   </div>
 
                   <div className={styles.contactInfo}>
-                    0317-777-3141 | TRAVELWITHZUNAIR.PK
+                    03498502081 | TRAVELWITHSOHAIL.PK
                   </div>
                 </div>
               </Link>

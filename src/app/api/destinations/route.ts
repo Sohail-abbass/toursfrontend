@@ -6,7 +6,7 @@ const BASE_URL =
 
 export async function GET() {
   try {
-    const res = await fetch(`${BASE_URL}/destinations`, {
+    const res = await fetch(`${BASE_URL}/api/destinations`, {
       cache: 'no-store'
     });
     

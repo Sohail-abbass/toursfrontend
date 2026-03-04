@@ -47,7 +47,7 @@ const BASE_URL =
   const fetchTourDetail = async () => {
     try {
       
-      const res = await axios.get(`${BASE_URL}/tours`);
+      const res = await axios.get(`${BASE_URL}/api/tours`);
       const tours = res.data;
       const foundTour = tours.find((t: Tour) => t.slug === params.slug);
       setTour(foundTour);

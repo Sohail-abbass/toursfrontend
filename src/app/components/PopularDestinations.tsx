@@ -27,7 +27,7 @@ const PopularDestinations = () => {
     try {
       const BASE_URL =
         process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:5000/api";
-        const res = await fetch(`${BASE_URL}/destinations`);
+        const res = await fetch(`${BASE_URL}/api/destinations`);
       const data = await res.json();
       // Filter only featured destinations
       const featured = data.filter((dest: Destination) => dest.featured);

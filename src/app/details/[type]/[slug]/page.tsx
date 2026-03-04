@@ -19,7 +19,6 @@ import {
 // import { FaArrowRight } from 'react-icons/fa';
 import Link from 'next/link';
 import styles from './detailPage.module.css';
-
 const { TextArea } = Input;
 const { Option } = Select;
 const { TabPane } = Tabs;
@@ -45,7 +44,7 @@ const BASE_URL =
       const type = params.type as string;
       setIsTour(type === 'tour');
       
-      let endpoint = type === 'tour' ? `${BASE_URL}/tours` : `${BASE_URL}/packages`;
+      let endpoint = type === 'tour' ? `${BASE_URL}/api/tours` : `${BASE_URL}/api/packages`;
       const res = await axios.get(endpoint);
       const items = res.data;
       const found = items.find((item: any) => item.slug === params.slug);
@@ -62,7 +61,9 @@ const BASE_URL =
   };
 
   const onFinish = async (values: any) => {
-    if (!data?._id) {
+    console.log("event trigger");
+  
+    if (!data?.id) {
       message.error("Invalid item selected");
       return;
     }
@@ -70,9 +71,14 @@ const BASE_URL =
     try {
       setSubmitting(true);
   
+      console.log("Booking payload:", {
+        bookingType: isTour ? "tour" : "package",
+        itemId: data.id
+      });
+  
       await submitBooking({
         bookingType: isTour ? "tour" : "package",
-        itemId: data._id,
+        itemId: data.id,
   
         customerName: values.name,
         customerEmail: values.email,
@@ -85,13 +91,17 @@ const BASE_URL =
         message: values.message,
       });
   
-      message.success("🎉 Booking submitted successfully! We will contact you shortly.");
-  
+      message.success("🎉 Booking submitted successfully!");
       form.resetFields();
+  
     } catch (error: any) {
+  
+      console.error("Booking API error:", error);
+  
       message.error(
         error?.response?.data?.message || "Something went wrong"
       );
+  
     } finally {
       setSubmitting(false);
     }
@@ -421,7 +431,9 @@ const BASE_URL =
               )}
 
               {/* Booking Form */}
-              <Form form={form} layout="vertical" onFinish={onFinish} className={styles.bookingForm}>
+              <Form form={form} layout="vertical" onFinish={onFinish}  onFinishFailed={(error) => {
+    console.log("FORM FAILED", error);
+  }} className={styles.bookingForm}>
                 <Form.Item
                   name="name"
                   rules={[{ required: true, message: 'Please enter your name' }]}

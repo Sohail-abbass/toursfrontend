@@ -1,5 +1,5 @@
 import axios from "axios";
-
+import { notification } from "antd";
 const BASE_URL =
   process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:5000/api";
 
@@ -20,7 +20,7 @@ const BASE_URL =
   }
 
   export const submitBooking = async (data: BookingPayload) => {
-    const res = await axios.post(`${BASE_URL}/bookings`, {
+    const res = await axios.post(`${BASE_URL}/api/bookings`, {
       bookingType: data.bookingType,
       itemId: data.itemId,
   
@@ -33,7 +33,11 @@ const BASE_URL =
       message: data.message?.trim(),
       travelDate: data.travelDate,
     });
-  
+    notification.success({
+      message: "Booking Confirmed 🎉",
+      description: `Your booking reference is ${res.data.data.bookingRef}`,
+      placement: "topRight",
+    });
     return res.data;
   };
   

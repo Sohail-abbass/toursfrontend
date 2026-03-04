@@ -11,13 +11,13 @@ const BASE_URL =
 // 🔹 Get all packages (uses GET /api/packages)
 // Backend returns { success, count, total, page, pages, data } – we return the array
 export const getPackages = async () => {
-  const res = await axios.get(`${BASE_URL}/packages`);
+  const res = await axios.get(`${BASE_URL}/api/packages`);
   const data = res.data?.data ?? res.data;
   return Array.isArray(data) ? data : [];
 };
 
 // 🔹 Fetch package by slug directly from backend (GET /api/packages/:slug)
 export const getPackageBySlug = async (slug: string) => {
-  const res = await axios.get(`${BASE_URL}/packages/${slug}`);
+  const res = await axios.get(`${BASE_URL}/api/packages/${slug}`);
   return res.data;
 };
