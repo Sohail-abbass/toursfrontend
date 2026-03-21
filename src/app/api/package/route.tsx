@@ -21,3 +21,16 @@ export const getPackageBySlug = async (slug: string) => {
   const res = await axios.get(`${BASE_URL}/api/packages/${slug}`);
   return res.data;
 };
+export const addPackage = async (pkg: any) => {
+  const res = await axios.post(`${BASE_URL}/api/packages`, pkg);
+  return res.data;
+};
+
+export const updatePackage = async (id: number, pkg: any) => {
+  const res = await axios.put(`${BASE_URL}/api/packages/${id}`, pkg);
+  return res.data;
+};
+
+export const deletePackage = async (id: number) => {
+  await axios.delete(`${BASE_URL}/api/packages/${id}`);
+};

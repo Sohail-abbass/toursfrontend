@@ -12,22 +12,7 @@ export default function HomePage() {
   const [tours, setTours] = useState([]);
   const [toursLoading, setToursLoading] = useState(true);
   
-  // Commented out Pixabay integration - using mock data
-  // const [images, setImages] = useState([]);
-  // const [loading, setLoading] = useState(false);
-  // const [query, setQuery] = useState("mountains");
 
-  // const fetchImages = async (searchTerm = "mountains") => {
-  //   setLoading(true);
-  //   try {
-  //     const res = await axios.get(`/api/pixabey?q=${encodeURIComponent(searchTerm)}`);
-  //     setImages(res.data);
-  //   } catch (error) {
-  //     console.error("Pixabay fetch error:", error);
-  //   } finally {
-  //     setLoading(false);
-  //   }
-  // };
 const BASE_URL =
   process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:5000/api";
 

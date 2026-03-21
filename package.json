@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node init && next dev",
+    "build": "node init && next build",
+    "start": "node init && next start",
     "deploy:vercel": "npm install --target_platform=linux --cpu=x64 --os=linux && vercel --prod",
-    "build:linux": "next build"
+    "build:linux": "node init && next build"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.9.0",
@@ -24,8 +24,8 @@
     "styled-components": "^6.1.19"
   },
   "engines": {
-  "node": "24.x"
-},
+    "node": "24.x"
+  },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^24.6.2",

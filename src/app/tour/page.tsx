@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import Tours from "./Tours";
 import styles from "./tourPage.module.css";
+import TourList from "./TourList";
 
 export default function TourPage() {
   return (
@@ -17,7 +17,9 @@ export default function TourPage() {
 
       {/* Main Tours Content */}
       <div className={styles.mainContent}>
-        <Tours />
+        <TourList />
+
+
       </div>
     </div>
   );
