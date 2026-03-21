@@ -59,6 +59,6 @@ export const updateTour = async (
 
 // 🔹 Optional: Delete tour (admin only – DELETE /api/tours/:id)
 export const deleteTour = async (id: string) => {
-  const res = await axios.delete(`${BASE_URL}/tours/${id}`);
+  const res = await axios.delete(`${BASE_URL}/api/tours/${id}`);
   return res.data;
 };

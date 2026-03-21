@@ -87,8 +87,8 @@ const ContactPage = () => {
                   <div className={styles.contactCardContent}>
                     <h3 className={styles.contactCardTitle}>Phone</h3>
                     <p className={styles.contactCardText}>
-                      +92 300 1234567<br />
-                      +92 51 1234567
+                      +92 349502081<br />
+                      +92 534470699
                     </p>
                   </div>
                 </div>
@@ -103,7 +103,7 @@ const ContactPage = () => {
                   <div className={styles.contactCardContent}>
                     <h3 className={styles.contactCardTitle}>Email</h3>
                     <p className={styles.contactCardText}>
-                      info@adventuretours.com<br />
+                      abbasssohail44@gmail.com<br />
                       bookings@adventuretours.com
                     </p>
                   </div>

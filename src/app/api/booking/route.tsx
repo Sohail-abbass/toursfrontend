@@ -40,4 +40,10 @@ const BASE_URL =
     });
     return res.data;
   };
+
+
+  export const getBookings = async ()=>{
+    const res = await axios.get(`${BASE_URL}/api/bookings`);
+    return res.data;
+  }
   
